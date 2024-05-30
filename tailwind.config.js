@@ -8,6 +8,7 @@ module.exports = {
         dark: "#2E5070",
         green: "#95BB6F",
         Fuschia: "#C6EAE3",
+        greenish: "#C6EAE3",
       },
     },
   },
