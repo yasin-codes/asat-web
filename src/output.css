@@ -602,6 +602,10 @@ video {
   margin: 2rem;
 }
 
+.m-32 {
+  margin: 8rem;
+}
+
 .my-32 {
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -644,6 +648,10 @@ video {
 
 .mt-\[68px\] {
   margin-top: 68px;
+}
+
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .flex {
@@ -1032,6 +1040,22 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-end {
