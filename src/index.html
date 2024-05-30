@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-light">
+  <body class="bg-light font-['Barlow']">
     <nav class="flex scale-95 bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between my-5 px-10 py-4 rounded-full overflow-hidden top-0 fixed w-full z-50 drop-shadow-[0_6px_18px_rgba(0,0,0,5%)] overflow-hidden">
       <a href="#">
         <img src="/public/img/logo.svg" alt="" class="z-10 flex items-center" />
       </a>
-      <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-['Barlow'] font-semibold visible md:invisible">
-        <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-['Barlow'] font-semibold invisible md:visible">
+      <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-semibold visible md:invisible">
+        <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-semibold invisible md:visible">
           <li>
             <a href="#">Tentang Kami</a>
           </li>
@@ -43,7 +43,7 @@
     </ul>
     <section class="my-32">
       <div class="flex flex-col-reverse md:flex-row justify-center m-8 gap-[0.63rem] px-0 lg:px-64">
-        <div id="left" class="flex flex-col justify-center flex-1 h-[800px] gap-5 font-['Barlow'] text-dark">
+        <div id="left" class="flex flex-col justify-center flex-1 h-[800px] gap-5 text-dark">
           <h1 class="text-[40px] md:text-[56px] md:leading-[67px] text-pretty font-semibold">Professional, Loving and Reliable Cat Care When You Can’t be There</h1>
           <p class="text-xl font-normal text-pretty">
             Di Joy Cat, kami berkomitmen untuk memberikan perawatan terbaik bagi kucing kesayangan Anda. Kami menawarkan berbagai layanan yang dirancang khusus untuk memastikan kesehatan dan kebahagiaan kucing Anda. Dari klinik kucing hingga daycare dan grooming, serta program adopsi, Joy Cat adalah
@@ -60,31 +60,76 @@
     </section>
     <section class="">
       <div class="bg-greenish flex flex-col justify-center items-center pt-32 pb-16">
-        <h2 class="text-dark font-['Barlow'] font-black text-[64px]">Our Services</h2>
+        <h2 class="text-dark font-black text-[64px]">Our Services</h2>
         <div class="flex flex-row justify-center items-center gap-8 scale-95 py-10">
           <div class="flex flex-col w-4/12 h-[700px] p-4 rounded-[18px] bg-white text-dark">
             <img src="/public/img/service-klinik.jpeg" class="w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
-            <h3 class="font-['Barlow'] font-semibold text-[32px] py-4 text-pretty">Klinik Kucing</h3>
-            <p class="font-['Barlow'] font-normal text-xl text-pretty">Tim dokter hewan kami yang berpengalaman siap memberikan perawatan medis terbaik untuk kucing Anda. Kami menyediakan layanan vaksinasi, pemeriksaan rutin, pengobatan penyakit, dan konsultasi kesehatan.</p>
-            <a href="#" class="bg-green text-white font-['Barlow'] text-2xl font-semibold p-6 rounded-full justify-center flex mt-[68px]">Cek Dokter</a>
+            <h3 class="font-semibold text-[32px] py-4 text-pretty">Klinik Kucing</h3>
+            <p class="font-normal text-xl text-pretty">Tim dokter hewan kami yang berpengalaman siap memberikan perawatan medis terbaik untuk kucing Anda. Kami menyediakan layanan vaksinasi, pemeriksaan rutin, pengobatan penyakit, dan konsultasi kesehatan.</p>
+            <a href="#" class="bg-green text-white text-2xl font-semibold p-6 rounded-full justify-center flex mt-[68px]">Cek Dokter</a>
           </div>
           <div class="flex flex-col w-4/12 h-[700px] p-4 rounded-[18px] bg-white text-dark">
             <img src="/public/img/service-daycare.webp" class="w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
-            <h3 class="font-['Barlow'] font-semibold text-[32px] py-4 text-pretty">Daycare & Grooming</h3>
-            <p class="font-['Barlow'] font-normal text-xl text-pretty">Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda saat Anda sibuk? Daycare kami adalah solusinya. Selain itu, layanan grooming kami akan membuat kucing Anda tetap bersih dan cantik.</p>
-            <a href="#" class="bg-green text-white font-['Barlow'] text-2xl font-semibold p-6 rounded-full justify-center flex mt-[68px]">Lihat Paket</a>
+            <h3 class="font-semibold text-[32px] py-4 text-pretty">Daycare & Grooming</h3>
+            <p class="font-normal text-xl text-pretty">Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda saat Anda sibuk? Daycare kami adalah solusinya. Selain itu, layanan grooming kami akan membuat kucing Anda tetap bersih dan cantik.</p>
+            <a href="#" class="bg-green text-white text-2xl font-semibold p-6 rounded-full justify-center flex mt-[68px]">Lihat Paket</a>
           </div>
           <div class="flex flex-col w-4/12 h-[700px] p-4 rounded-[18px] bg-white text-dark">
             <img src="/public/img/service-adopsi.jpeg" class="w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
-            <h3 class="font-['Barlow'] font-semibold text-[32px] py-4 text-pretty">Adopsi Kucing</h3>
-            <p class="font-['Barlow'] font-normal text-xl text-pretty">Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita bahagia mereka.</p>
-            <a href="#" class="bg-green text-white font-['Barlow'] text-2xl font-semibold p-6 rounded-full justify-center flex mt-[97px]">Cari Kucing</a>
+            <h3 class="font-semibold text-[32px] py-4 text-pretty">Adopsi Kucing</h3>
+            <p class="font-normal text-xl text-pretty">Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita bahagia mereka.</p>
+            <a href="#" class="bg-green text-white text-2xl font-semibold p-6 rounded-full justify-center flex mt-[97px]">Cari Kucing</a>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="bg-[url('/public/img/big-cat-img.jpg')] bg-cover bg-center h-96 w-full"></div>
+      <div class="bg-[url('/public/img/big-cat-img.jpg')] bg-cover bg-center py-32 w-full text-dark">
+        <div class="container w-full flex flex-col md:flex-row gap-10 mx-10">
+          <div class="flex flex-col items-center justify-start py-5 bg-white w-full md:w-4/12 rounded-[18px]">
+            <div class="flex flex-col items-start gap-5 w-full px-10">
+              <h4 class="text-[30px] font-semibold">Opening Hours</h4>
+              <ul class="flex flex-col gap-5 text-lg">
+                <li>
+                  <span class="font-bold">Weekdays</span>
+                  <br />
+                  08:00-17:00
+                </li>
+
+                <li>
+                  <span class="font-bold">Weekend</span>
+                  <br />
+                  07:00-19:00
+                </li>
+              </ul>
+              <div class="bg-greenish w-full h-px"></div>
+              <h4 class="text-[30px] font-semibold">Kontak Cepat</h4>
+              <ul class="flex flex-col gap-5 text-lg">
+                <li>
+                  <span class="font-bold">Whatsapp</span>
+                  <br />
+                  0812-1234-5678
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center py-5 bg-white w-full md:w-4/12 rounded-[18px]">
+            <div class="flex flex-col items-start gap-5 w-full px-10">
+              <h4 class="text-[30px] font-semibold">Alamat Kami</h4>
+              <p class="text-lg font-normal text-pretty">Jl. Radar Auri No.32d, Cisalak Ps., Kec. Cimanggis, Kota Depok, Jawa Barat 16452</p>
+              <div class="bg-greenish w-full h-px"></div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.663436893967!2d106.8679048!3d-6.3725769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69edee0a2b7f05%3A0x95ab16f97f8f308a!2sMoreTHAN%20Veterinary%20Clinic!5e0!3m2!1sen!2sid!4v1717110420914!5m2!1sen!2sid"
+                class="w-full h-80"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="script.js"></script>
   </body>
