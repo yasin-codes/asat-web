@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-light">
-    <nav class="flex bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between my-5 px-10 py-4 rounded-full overflow-hidden top-0 fixed w-full z-50">
+    <nav class="flex bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between my-5 px-10 py-4 rounded-full overflow-hidden top-0 fixed w-full z-50 drop-shadow-[0_6px_18px_rgba(0,0,0,5%)]">
       <a href="#">
         <img src="/public/img/logo.svg" alt="" class="z-10 flex items-center" />
       </a>
@@ -61,15 +61,24 @@
     <section class="">
       <div class="bg-greenish flex flex-col justify-center items-center py-32">
         <h2 class="text-dark font-['Barlow'] font-black text-[64px]">Our Services</h2>
-        <div class="flex flex-row justify-center items-center gap-8 py-10">
-          <div class="flex flex-col w-4/12 p-4 rounded-[18px] bg-white">
+        <div class="flex flex-row justify-center items-center gap-8 scale-95 py-10">
+          <div class="flex flex-col w-4/12 p-4 rounded-[18px] bg-white text-dark">
             <img src="/public/img/service-klinik.jpeg" class="w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
+            <h3 class="font-['Barlow'] font-semibold text-[32px] py-4 text-pretty">Klinik Kucing</h3>
+            <p class="font-['Barlow'] font-normal text-xl text-pretty">Tim dokter hewan kami yang berpengalaman siap memberikan perawatan medis terbaik untuk kucing Anda. Kami menyediakan layanan vaksinasi, pemeriksaan rutin, pengobatan penyakit, dan konsultasi kesehatan.</p>
+            <button class="bg-green text-white font-['Barlow'] text-2xl font-semibold p-6 rounded-full mt-[68px]">Cek Dokter</button>
           </div>
-          <div class="flex flex-col w-4/12 p-4 rounded-[18px] bg-white">
+          <div class="flex flex-col w-4/12 p-4 rounded-[18px] bg-white text-dark">
             <img src="/public/img/service-daycare.webp" class="w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
+            <h3 class="font-['Barlow'] font-semibold text-[32px] py-4 text-pretty">Daycare & Grooming</h3>
+            <p class="font-['Barlow'] font-normal text-xl text-pretty">Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda saat Anda sibuk? Daycare kami adalah solusinya. Selain itu, layanan grooming kami akan membuat kucing Anda tetap bersih dan cantik.</p>
+            <button class="bg-green text-white font-['Barlow'] text-2xl font-semibold p-6 rounded-full mt-[68px]">Lihat Paket</button>
           </div>
-          <div class="flex flex-col w-4/12 p-4 rounded-[18px] bg-white">
+          <div class="flex flex-col w-4/12 p-4 rounded-[18px] bg-white text-dark">
             <img src="/public/img/service-adopsi.jpeg" class="w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
+            <h3 class="font-['Barlow'] font-semibold text-[32px] py-4 text-pretty">Adopsi Kucing</h3>
+            <p class="font-['Barlow'] font-normal text-xl text-pretty">Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita bahagia mereka.</p>
+            <button class="bg-green text-white font-['Barlow'] text-2xl font-semibold p-6 rounded-full mt-[68px]">Cari Kucing</button>
           </div>
         </div>
       </div>
