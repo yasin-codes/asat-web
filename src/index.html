@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-black">
-    <nav class="flex bg-[url('/public/img/paw-pattern1.svg')] bg-white flex-row justify-between m-5 px-10 py-4 rounded-full overflow-hidden relative">
-      <img src="/public/img/logo.svg" alt="" class="z-10" />
-      <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-['Barlow'] font-semibold">
+  <body class="bg-light">
+    <nav class="flex bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between m-5 px-10 py-4 rounded-full overflow-hidden relative">
+      <a href="#">
+        <img src="/public/img/logo.svg" alt="" class="z-10" />
+      </a>
+      <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-['Barlow'] font-semibold invisible md:visible">
         <li>
           <a href="#">Tentang Kami</a>
         </li>
@@ -26,5 +28,20 @@
         </li>
       </ul>
     </nav>
+    <main>
+      <div class="flex flex-col-reverse md:flex-row justify-center m-8 gap-[0.63rem] px-0 lg:px-64 ">
+        <div id="left" class="flex flex-col flex-1 h-96 gap-5 font-['Barlow'] bg-white text-dark">
+          <h1 class="text-[40px] md:text-[56px] md:leading-[67px] text-pretty font-semibold">Professional, Loving and Reliable Cat Care When You Can’t be There</h1>
+          <p class="text-xl font-normal text-pretty">
+            Di Joy Cat, kami berkomitmen untuk memberikan perawatan terbaik bagi kucing kesayangan Anda. Kami menawarkan berbagai layanan yang dirancang khusus untuk memastikan kesehatan dan kebahagiaan kucing Anda. Dari klinik kucing hingga daycare dan grooming, serta program adopsi, Joy Cat adalah
+            pilihan tepat bagi para pemilik kucing yang peduli.
+          </p>
+          <img src="/public/img/CatPaw.svg" alt="" class="size-52" />
+        </div>
+        <div id="right" class="bg-black flex flex-col flex-1 h-96 text-white">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquid possimus voluptate est velit modi minus fugit expedita sapiente deserunt.</p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
