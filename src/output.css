@@ -654,6 +654,22 @@ video {
   margin-top: 8rem;
 }
 
+.mt-\[72px\] {
+  margin-top: 72px;
+}
+
+.mt-\[90px\] {
+  margin-top: 90px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[97px\] {
+  margin-top: 97px;
+}
+
 .flex {
   display: flex;
 }
@@ -956,6 +972,18 @@ video {
 
 .bg-\[url\(\'\/public\/img\/paw-pattern-light\.png\'\)\] {
   background-image: url('/public/img/paw-pattern-light.png');
+}
+
+.bg-\[url\(\'\/public\/img\/\'\)\] {
+  background-image: url('/public/img/');
+}
+
+.bg-\[url\(\'\/public\/img\/big-cat-img\'\)\] {
+  background-image: url('/public/img/big-cat-img');
+}
+
+.bg-\[url\(\'\/public\/img\/big-cat-img\.jpg\'\)\] {
+  background-image: url('/public/img/big-cat-img.jpg');
 }
 
 .bg-cover {
