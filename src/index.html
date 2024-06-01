@@ -42,7 +42,7 @@
     <!-- /////////// -->
 
     <nav class="flex flex-grow mx-auto scale-95 bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between my-5 pe-10 md:px-10 py-4 rounded-full overflow-hidden top-0 fixed w-full z-50 drop-shadow-[0_6px_18px_rgba(0,0,0,5%)]">
-      <a href="#" class="z-10 flex justify-center items-center  ">
+      <a href="#" class="z-10 flex justify-center items-center">
         <svg width="155" class="scale-75 md:scale-100" height="58" viewBox="0 0 155 58" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M60.4449 40.124C59.1627 38.4992 58.015 36.7483 57.1699 34.8548C56.1693 32.4203 55.6375 29.8307 55.5015 27.2138C55.7596 26.7599 57.3411 23.9973 58.4043 22.6839C59.5645 21.2504 61.128 18.5184 60.5605 15.5362C60.1716 13.4929 59.7298 12.3109 59.4898 11.7688C59.7878 11.3781 60.1075 11.0021 60.4519 10.6443C61.1057 10.0109 61.8107 9.35653 62.705 9.09757C63.4981 8.85115 64.4244 9.00708 65.043 9.57697C65.9846 10.5195 65.6676 12.0046 65.2393 13.1211C64.5729 14.7519 63.5654 16.2124 62.7625 17.7758C60.8793 21.3502 59.3334 25.221 59.158 29.3007C59.1162 31.5826 59.229 33.9977 60.204 36.0967C60.2388 36.1501 60.2774 36.1951 60.3177 36.2336C60.3228 37.617 60.9373 38.9601 61.6501 40.1263C62.6827 41.7626 63.9886 43.2184 64.8936 44.9374C64.9284 45.0038 64.9618 45.0706 64.9956 45.1374C63.5431 43.4083 61.858 41.8875 60.4449 40.124Z"
@@ -126,26 +126,21 @@
       <li class="hamburgerList"><a href="#">Projects</a></li>
       <li class="hamburgerList"><a href="#">Contact</a></li>
     </ul> -->
-    <section class="my-32">
-      <div class="flex flex-col-reverse md:flex-row justify-center items-center">
-        <div id="left" class="flex flex-col justify-center flex-1 gap-5 text-dark scale-50 md:scale-75 lg:scale-90 xl:scale-100 pe-10 bg-black">
+    <section class="-my-10 lg:my-10 xl:my-32">
+      <div class="flex flex-col-reverse md:flex-row container mx-auto bg-red-500">
+        <div id="left" class="flex flex-col justify-center flex-1 gap-5 text-dark scale-75 md:scale-50 lg:scale-90 xl:scale-100 lg:my-0 lg:mb-0">
           <h1 class="text-[40px] md:text-[56px] md:leading-[67px] text-pretty font-semibold">Professional, Loving and Reliable Cat Care When You Can’t be There</h1>
-          <p class="text-xl font-normal text-pretty">
+          <p class="text-xl font-normal text-pretty flex justify-end">
             Di Joy Cat, kami berkomitmen untuk memberikan perawatan terbaik bagi kucing kesayangan Anda. Kami menawarkan berbagai layanan yang dirancang khusus untuk memastikan kesehatan dan kebahagiaan kucing Anda. Dari klinik kucing hingga daycare dan grooming, serta program adopsi, Joy Cat adalah
             pilihan tepat bagi para pemilik kucing yang peduli.
           </p>
           <img src="/public/img/CatPaw.svg" alt="" class="size-32 md:size-52" />
         </div>
-        <div id="right" class="flex-1 flex relative bg-red-500 justify-center scale-50 md:scale-75">
+        <div id="right" class="flex-1 flex relative justify-center scale-50 md:scale-50 lg:scale-75 xl:scale-100">
           <img src="/public/img/hero-home-3.jpg" class="object-cover absolute size-[200px] rounded-full border-green border-[10px] z-20 right-[65%] top-[5%]" alt="" />
           <img src="/public/img/hero-home-2.jpg" class="object-cover absolute z-10 transform scale-x-[-1] w-[240px] h-[360px] rounded-[200px] border-[10px] border-Fuschia left-[65%] bottom-[-10%]" alt="" />
           <img src="/public/img/hero-home-1.jpg" class="object-cover rounded-t-full z-0 h-[750px] w-[543px] border-[10px] border-white" alt="" />
         </div>
-        <!-- <div id="right" class="flex flex-col flex-1 w-fit h-[700px] scale-75 md:scale-100 relative">
-          <div class="w-[200px] h-[200px] border-[10px] rounded-full border-green bg-[url('/public/img/hero-home-3.jpg')] bg-cover bg-center z-40 absolute translate-y-10" alt=""></div>
-          <div class="bg-[url('/public/img/hero-home-1.jpg')] w-[543px] h-[748px] bg-cover bg-center border-[10px] border-white rounded-t-full z-30 absolute translate-x-10"></div>
-          <div class="bg-[url('/public/img/hero-home-2.jpg')] w-[240px] h-[356px] bg-cover bg-center border-[10px] rounded-[200px] -scale-x-100 border-Fuschia z-30 absolute translate-y-[500px] translate-x-[420px]"></div>
-        </div> -->
       </div>
     </section>
     <section class="">
@@ -153,19 +148,19 @@
         <h2 class="text-dark font-black text-[40px] md:text-[64px] text-wrap">Our Services</h2>
         <div class="flex flex-col lg:flex-row justify-center items-center gap-8 scale-95 py-10">
           <div class="flex flex-col w-11/12 lg:w-4/12 h-[700px] p-4 rounded-[18px] bg-white text-dark">
-            <img src="/public/img/service-klinik.jpeg" class="w-full lg:w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
+            <img src="/public/img/service-klinik.jpeg" class="w-full h-[326px] object-cover object-center overflow-hidden rounded-[8px]" alt="" />
             <h3 class="font-semibold text-[32px] py-4 text-pretty">Klinik Kucing</h3>
             <p class="font-normal text-xl text-pretty">Tim dokter hewan kami yang berpengalaman siap memberikan perawatan medis terbaik untuk kucing Anda. Kami menyediakan layanan vaksinasi, pemeriksaan rutin, pengobatan penyakit, dan konsultasi kesehatan.</p>
             <a href="#" class="bg-green hover:bg-lime-700 hover:transition hover:duration-300 duration-300 text-white text-2xl font-semibold p-6 rounded-full justify-center flex mt-[68px]">Cek Dokter</a>
           </div>
           <div class="flex flex-col w-11/12 lg:w-4/12 h-[700px] p-4 rounded-[18px] bg-white text-dark">
-            <img src="/public/img/service-daycare.webp" class="w-full lg:w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
+            <img src="/public/img/service-daycare.webp" class="w-full h-[326px] object-cover object-center overflow-hidden rounded-[8px]" alt="" />
             <h3 class="font-semibold text-[32px] py-4 text-pretty">Daycare & Grooming</h3>
             <p class="font-normal text-xl text-pretty">Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda saat Anda sibuk? Daycare kami adalah solusinya. Selain itu, layanan grooming kami akan membuat kucing Anda tetap bersih dan cantik.</p>
             <a href="#" class="bg-green hover:bg-lime-700 hover:transition hover:duration-300 duration-300 text-white text-2xl font-semibold p-6 rounded-full justify-center flex mt-[68px]">Lihat Paket</a>
           </div>
           <div class="flex flex-col w-11/12 lg:w-4/12 h-[700px] p-4 rounded-[18px] bg-white text-dark">
-            <img src="/public/img/service-adopsi.jpeg" class="w-full lg:w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
+            <img src="/public/img/service-adopsi.jpeg" class="w-full h-[326px] object-cover object-center overflow-hidden rounded-[8px]" alt="" />
             <h3 class="font-semibold text-[32px] py-4 text-pretty">Adopsi Kucing</h3>
             <p class="font-normal text-xl text-pretty">Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita bahagia mereka.</p>
             <a href="#" class="bg-green hover:bg-lime-700 hover:transition hover:duration-300 duration-300 text-white text-2xl font-semibold p-6 rounded-full justify-center flex mt-[97px]">Cari Kucing</a>
