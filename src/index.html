@@ -13,11 +13,11 @@
     <!-- ///////// -->
 
     <!-- Modal Background -->
-    <div id="modal-background" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden z-50">
+    <div id="hamburgerList" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden z-50">
       <!-- Modal Container -->
-      <div class="flex items-center justify-center fixed h-screen bottom-[0%] w-full">
+      <div class="flex items-center justify-center fixed h-screen top-[10%] w-full">
         <!-- Modal -->
-        <div id="modal" class="bg-white bg-[url('/public/img/paw-pattern-light.png')] rounded-t-[32px] shadow-lg p-8 m-4 w-full h-full text-center">
+        <div class="bg-white bg-[url('/public/img/paw-pattern-light.png')] rounded-t-[32px] shadow-lg p-8 m-4 w-full h-full text-center">
           <ul class="flex flex-col items-center gap-8 z-10 text-sky-900 font-semibold visible md:invisible">
             <li>
               <a href="/src/tentang.html">Tentang Kami</a>
@@ -35,15 +35,14 @@
               <a href=""><i class="bi bi-whatsapp px-2 text-green"></i>0812-3456-78910</a>
             </li>
           </ul>
-          <button id="close-modal" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Close</button>
         </div>
       </div>
     </div>
 
     <!-- /////////// -->
 
-    <nav class="flex mx-auto scale-95 bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between my-5 pe-10 md:px-10 py-4 rounded-full overflow-hidden top-0 fixed w-full z-50 drop-shadow-[0_6px_18px_rgba(0,0,0,5%)]">
-      <a href="#" class="z-10 flex justify-center items-center">
+    <nav class="flex flex-grow mx-auto scale-95 bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between my-5 pe-10 md:px-10 py-4 rounded-full overflow-hidden top-0 fixed w-full z-50 drop-shadow-[0_6px_18px_rgba(0,0,0,5%)]">
+      <a href="#" class="z-10 flex justify-center items-center  ">
         <svg width="155" class="scale-75 md:scale-100" height="58" viewBox="0 0 155 58" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M60.4449 40.124C59.1627 38.4992 58.015 36.7483 57.1699 34.8548C56.1693 32.4203 55.6375 29.8307 55.5015 27.2138C55.7596 26.7599 57.3411 23.9973 58.4043 22.6839C59.5645 21.2504 61.128 18.5184 60.5605 15.5362C60.1716 13.4929 59.7298 12.3109 59.4898 11.7688C59.7878 11.3781 60.1075 11.0021 60.4519 10.6443C61.1057 10.0109 61.8107 9.35653 62.705 9.09757C63.4981 8.85115 64.4244 9.00708 65.043 9.57697C65.9846 10.5195 65.6676 12.0046 65.2393 13.1211C64.5729 14.7519 63.5654 16.2124 62.7625 17.7758C60.8793 21.3502 59.3334 25.221 59.158 29.3007C59.1162 31.5826 59.229 33.9977 60.204 36.0967C60.2388 36.1501 60.2774 36.1951 60.3177 36.2336C60.3228 37.617 60.9373 38.9601 61.6501 40.1263C62.6827 41.7626 63.9886 43.2184 64.8936 44.9374C64.9284 45.0038 64.9618 45.0706 64.9956 45.1374C63.5431 43.4083 61.858 41.8875 60.4449 40.124Z"
@@ -102,13 +101,16 @@
         </ul>
 
         <!-- Button to Open Modal -->
-        <div id="open-modal" class="md:hidden">
-          <a class="nav-toggle">
-            <span class="bar bg-dark hover:bg-cyan-950"></span>
-            <span class="bar bg-dark hover:bg-cyan-950"></span>
-            <span class="bar bg-dark hover:bg-cyan-950"></span>
-          </a>
+        <div class="my-auto cursor-pointer space-y-2 z-50 md:hidden" id="hamburger">
+          <div class="h-0.5 w-8 bg-teal-900"></div>
+          <div class="h-0.5 w-8 bg-teal-900"></div>
+          <div class="h-0.5 w-8 bg-teal-900"></div>
         </div>
+        <!-- <a class="nav-toggle">
+            <span class="bar bg-dark hover:bg-cyan-950"></span>
+            <span class="bar bg-dark hover:bg-cyan-950"></span>
+            <span class="bar bg-dark hover:bg-cyan-950"></span>
+          </a> -->
 
         <!-- <div class="my-auto cursor-pointer space-y-1 md:hidden" id="hamburger">
           <div class="h-1 w-10 bg-dark"></div>
@@ -125,8 +127,8 @@
       <li class="hamburgerList"><a href="#">Contact</a></li>
     </ul> -->
     <section class="my-32">
-      <div class="flex flex-col-reverse md:flex-row justify-center md:gap-[0.63rem] lg:px-64">
-        <div id="left" class="flex flex-col justify-center md:flex-1 h-[800px] gap-5 text-dark scale-50 md:scale-75 lg:scale-90 xl:scale-100 pe-10 bg-black">
+      <div class="flex flex-col-reverse md:flex-row justify-center items-center">
+        <div id="left" class="flex flex-col justify-center flex-1 gap-5 text-dark scale-50 md:scale-75 lg:scale-90 xl:scale-100 pe-10 bg-black">
           <h1 class="text-[40px] md:text-[56px] md:leading-[67px] text-pretty font-semibold">Professional, Loving and Reliable Cat Care When You Can’t be There</h1>
           <p class="text-xl font-normal text-pretty">
             Di Joy Cat, kami berkomitmen untuk memberikan perawatan terbaik bagi kucing kesayangan Anda. Kami menawarkan berbagai layanan yang dirancang khusus untuk memastikan kesehatan dan kebahagiaan kucing Anda. Dari klinik kucing hingga daycare dan grooming, serta program adopsi, Joy Cat adalah
@@ -134,7 +136,7 @@
           </p>
           <img src="/public/img/CatPaw.svg" alt="" class="size-32 md:size-52" />
         </div>
-        <div id="right" class="md:flex-1 flex relative bg-red-500 justify-center sm:scale-50 md:scale-75 lg:scale-90 xl:scale-95 2xl:scale-100">
+        <div id="right" class="flex-1 flex relative bg-red-500 justify-center scale-50 md:scale-75">
           <img src="/public/img/hero-home-3.jpg" class="object-cover absolute size-[200px] rounded-full border-green border-[10px] z-20 right-[65%] top-[5%]" alt="" />
           <img src="/public/img/hero-home-2.jpg" class="object-cover absolute z-10 transform scale-x-[-1] w-[240px] h-[360px] rounded-[200px] border-[10px] border-Fuschia left-[65%] bottom-[-10%]" alt="" />
           <img src="/public/img/hero-home-1.jpg" class="object-cover rounded-t-full z-0 h-[750px] w-[543px] border-[10px] border-white" alt="" />
@@ -148,7 +150,7 @@
     </section>
     <section class="">
       <div class="bg-greenish flex flex-col justify-center items-center pt-32 pb-16">
-        <h2 class="text-dark font-black text-[64px]">Our Services</h2>
+        <h2 class="text-dark font-black text-[40px] md:text-[64px] text-wrap">Our Services</h2>
         <div class="flex flex-col lg:flex-row justify-center items-center gap-8 scale-95 py-10">
           <div class="flex flex-col w-11/12 lg:w-4/12 h-[700px] p-4 rounded-[18px] bg-white text-dark">
             <img src="/public/img/service-klinik.jpeg" class="w-full lg:w-[560px] h-[326px] object-cover overflow-hidden rounded-[8px]" alt="" />
@@ -171,7 +173,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <!-- <section>
       <div class="bg-[url('/public/img/big-cat-img.jpg')] bg-cover bg-center py-32 w-full text-dark">
         <div class="container w-full flex flex-col md:flex-row gap-10 mx-10">
           <div class="flex flex-col items-center py-5 bg-white lg:w-4/12 md:w-11/12 rounded-[18px]">
@@ -218,10 +220,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section>
       <div class="text-dark bg-greenish flex flex-col xl:flex-row gap-10 p-10 py-20">
-        <h1 class="text-[64px] font-black">Testimonials</h1>
+        <h1 class="text-[40px] md:text-[64px] font-black">Testimonials</h1>
         <div class="bg-white flex flex-col p-10 gap-5 text-[18px] h-fit w-full xl:w-3/12 rounded-[18px]">
           <img src="/public/img/quote.svg" class="size-10" alt="" />
           <p>It was my second time there. I believe my cat, Dusty had a good time there. Had a major timming and royal splash spa. The fur is still smooth after 2 weeks. They took great care of Dusty knowing that she is pregnant. Recommended!</p>
@@ -294,21 +296,6 @@
         </ul> -->
       </div>
     </footer>
-    <script>
-      document.getElementById("open-modal").addEventListener("click", function () {
-        document.getElementById("modal-background").classList.remove("hidden");
-      });
-
-      document.getElementById("close-modal").addEventListener("click", function () {
-        document.getElementById("modal-background").classList.add("hidden");
-      });
-
-      document.getElementById("modal-background").addEventListener("click", function (event) {
-        if (event.target === this) {
-          this.classList.add("hidden");
-        }
-      });
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
