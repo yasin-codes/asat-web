@@ -10,6 +10,7 @@ module.exports = {
         Fuschia: "#C6EAE3",
         greenish: "#C6EAE3",
         lightCyan: "#B7EBE4",
+        teally: "#5FB7A7",
       },
     },
   },
