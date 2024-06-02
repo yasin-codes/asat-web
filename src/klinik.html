@@ -3,28 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS Modal</title>
     <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   </head>
-  <body class="bg-gray-200 flex items-center justify-center h-screen pb-[1000px]">
-    <div class="my-auto cursor-pointer space-y-2 z-50" id="hamburger">
-      <div class="h-0.5 w-8 bg-teal-900"></div>
-      <div class="h-0.5 w-8 bg-teal-900"></div>
-      <div class="h-0.5 w-8 bg-teal-900"></div>
-    </div>
-    <!-- Modal Background -->
-    <div class="sticky top-[70px] z-40 hidden border-t-2 border-white py-2 text-end md:hidden" id="hamburgerList">
-      <div class="fixed inset-0 bg-gray-900 bg-opacity-50">
-        <div class="flex items-center justify-center min-h-screen">
-          <div class="bg-white rounded-lg shadow-lg p-8 m-4 max-w-xs max-h-full text-center bottom-[100%]">
-            <h2 class="text-2xl font-bold mb-4">Modal Title</h2>
-            <p class="text-gray-700 mb-4">This is a simple modal using Tailwind CSS.</p>
+  <body class="font-['Barlow']">
+    <section id="big-cat-pic" class="bg-[url('/public/img/hero-clinic.jpg')] bg-cover bg-center w-full h-[300px] md:h-[600px]"></section>
+    <main>
+      <section class="ttg bg-light text-dark text-[64px] py-32">
+        <div class="flex flex-col lg:flex-row gap-10 justify-center container px-10 lg:px-20 mx-auto">
+          <div class="flex flex-col md:flex-row gap-[10px] flex-1">
+            <h1 class="font-black">
+              Klinik <br />
+              Kucing
+            </h1>
+            <img src="/public/img/CatPaw(1).svg" class="size-52" alt="" />
+          </div>
+          <div class="flex-1 flex items-center">
+            <p class="text-lg lg:text-xl text-black">
+              Selamat datang di Klinik Kucing Joy Cat, tempat di mana kesehatan dan kesejahteraan kucing Anda adalah prioritas utama kami. Kami menyediakan berbagai layanan medis dengan dukungan tim dokter hewan yang berpengalaman dan fasilitas modern.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- JavaScript to handle modal functionality -->
-    <script src="script.js"></script>
+        <div class="container flex flex-col px-10 lg:px-20 mx-auto pt-32">
+          <div class="flex flex-col lg:flex-row mt-32 gap-8 items-center justify-center">
+            <h2 class="flex flex-1 font-bold text-[40px]">1. Pemeriksaan Kesehatan Rutin</h2>
+            <p class="flex flex-1 text-xl text-black">
+              Kami menawarkan pemeriksaan kesehatan rutin untuk memastikan kucing Anda dalam kondisi prima. Pemeriksaan ini meliputi pengecekan fisik, pengukuran berat badan, dan evaluasi kesehatan secara keseluruhan.
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row mt-32 gap-8 items-center justify-center">
+            <h2 class="flex flex-1 font-bold text-[40px]">2. Vaksinasi</h2>
+            <p class="flex flex-1 text-xl text-black">
+              Lindungi kucing Anda dari penyakit berbahaya dengan vaksinasi yang tepat waktu. Kami menyediakan vaksinasi lengkap sesuai dengan jadwal yang direkomendasikan oleh dokter hewan.
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row mt-32 gap-8 items-center justify-center">
+            <h2 class="flex flex-1 font-bold text-[40px]">3. Pengobatan Penyakit</h2>
+            <p class="flex flex-1 text-xl text-black">
+              Apapun penyakit yang mungkin dihadapi kucing Anda, kami siap memberikan diagnosis yang akurat dan pengobatan yang efektif. Tim kami berkomitmen untuk memberikan perawatan terbaik agar kucing Anda segera pulih.
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row mt-32 gap-8 items-center justify-center">
+            <h2 class="flex flex-1 font-bold text-[40px]">4. Bedah</h2>
+            <p class="flex flex-1 text-xl text-black">
+              Klinik kami dilengkapi dengan ruang operasi yang steril dan peralatan modern untuk melakukan berbagai prosedur bedah, dari operasi minor hingga operasi mayor. Dokter hewan kami akan memberikan penjelasan mendetail dan dukungan pasca-operasi.
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row mt-32 gap-8 items-center justify-center">
+            <h2 class="flex flex-1 font-bold text-[40px]">5. Konsultasi Kesehatan</h2>
+            <p class="flex flex-1 text-xl text-black">
+              Punya pertanyaan tentang kesehatan kucing Anda? Kami menyediakan layanan konsultasi kesehatan untuk memberikan informasi dan saran yang Anda butuhkan. Baik secara langsung di klinik atau melalui konsultasi online.
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row mt-32 gap-8 items-center justify-center">
+            <h2 class="flex flex-1 font-bold text-[40px]">6. Laboratorium Diagnostik</h2>
+            <p class="flex flex-1 text-xl text-black">
+              Dengan fasilitas laboratorium yang lengkap, kami dapat melakukan berbagai tes diagnostik seperti tes darah, urin, dan lainnya untuk mendukung diagnosis yang akurat.
+            </p>
+          </div>
+        
+        </div>
+      </section>
   </body>
 </html>
