@@ -679,6 +679,11 @@ video {
   margin-right: auto;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -697,32 +702,16 @@ video {
   margin-top: 8rem;
 }
 
+.mt-\[25px\] {
+  margin-top: 25px;
+}
+
 .mt-\[68px\] {
   margin-top: 68px;
 }
 
 .mt-\[97px\] {
   margin-top: 97px;
-}
-
-.ms-40 {
-  margin-inline-start: 10rem;
-}
-
-.ms-10 {
-  margin-inline-start: 2.5rem;
-}
-
-.mt-\[px\] {
-  margin-top: px;
-}
-
-.mt-\[20px\] {
-  margin-top: 20px;
-}
-
-.mt-\[25px\] {
-  margin-top: 25px;
 }
 
 .flex {
@@ -814,6 +803,18 @@ video {
   height: 100vh;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -845,10 +846,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-3\/12 {
-  width: 25%;
 }
 
 .flex-1 {
@@ -986,8 +983,8 @@ video {
   gap: 10px;
 }
 
-.gap-96 {
-  gap: 24rem;
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -1032,6 +1029,22 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-t-\[32px\] {
@@ -1121,9 +1134,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black {
+.bg-yellowLah {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(246 201 86 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1132,6 +1145,10 @@ video {
 
 .bg-\[url\(\'\/public\/img\/big-cat-img\.jpg\'\)\] {
   background-image: url('/public/img/big-cat-img.jpg');
+}
+
+.bg-\[url\(\'\/public\/img\/hero-adoption\.jpg\'\)\] {
+  background-image: url('/public/img/hero-adoption.jpg');
 }
 
 .bg-\[url\(\'\/public\/img\/hero-clinic\.jpg\'\)\] {
@@ -1152,10 +1169,6 @@ video {
 
 .bg-\[url\(\'\/public\/img\/paw-pattern-light\.png\'\)\] {
   background-image: url('/public/img/paw-pattern-light.png');
-}
-
-.bg-\[url\(\'\/public\/img\/hero-adoption\.jpg\'\)\] {
-  background-image: url('/public/img/hero-adoption.jpg');
 }
 
 .bg-cover {
@@ -1180,6 +1193,10 @@ video {
   padding: 2.5rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1198,14 +1215,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .px-10 {
@@ -1263,12 +1272,20 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
 
 .pb-32 {
   padding-bottom: 8rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pb-52 {
@@ -1281,6 +1298,10 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .pt-32 {
@@ -1299,42 +1320,6 @@ video {
   padding-top: 1.25rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.ps-40 {
-  padding-inline-start: 10rem;
-}
-
-.pe-52 {
-  padding-inline-end: 13rem;
-}
-
-.pe-20 {
-  padding-inline-end: 5rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1345,6 +1330,14 @@ video {
 
 .font-\[\'Barlow\'\] {
   font-family: 'Barlow';
+}
+
+.font-\[\'\'\] {
+  font-family: '';
+}
+
+.font-\[\] {
+  font-family: ;
 }
 
 .text-2xl {
@@ -1393,6 +1386,15 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[302px\] {
+  font-size: 302px;
 }
 
 .font-black {
@@ -1515,6 +1517,11 @@ video {
 .hover\:bg-lime-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(77 124 15 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-950:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 47 73 / var(--tw-bg-opacity));
 }
 
 .hover\:underline:hover {
@@ -1649,32 +1656,12 @@ video {
     margin-bottom: 0px;
   }
 
-  .lg\:w-4\/12 {
-    width: 33.333333%;
-  }
-
   .lg\:w-3\/12 {
     width: 25%;
   }
 
-  .lg\:w-2\/12 {
-    width: 16.666667%;
-  }
-
-  .lg\:w-\[3\/12\] {
-    width: 3/12;
-  }
-
-  .lg\:w-\[\] {
-    width: ;
-  }
-
-  .lg\:w-\[25\%\] {
-    width: 25%;
-  }
-
-  .lg\:w-\[2\%\] {
-    width: 2%;
+  .lg\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .lg\:w-\[24\%\] {

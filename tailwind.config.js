@@ -11,6 +11,7 @@ module.exports = {
         greenish: "#C6EAE3",
         lightCyan: "#B7EBE4",
         teally: "#5FB7A7",
+        yellowLah: "#F6C956",
       },
     },
   },
