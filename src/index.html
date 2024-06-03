@@ -8,6 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+      .line.transform-active:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+      }
+
+      .line.transform-active:nth-child(2) {
+        opacity: 0;
+      }
+
+      .line.transform-active:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    </style>
   </head>
   <body class="bg-light font-['Barlow']">
     <!-- ///////// -->
@@ -15,7 +28,7 @@
     <!-- Modal Background -->
     <div id="hamburgerList" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden z-50">
       <!-- Modal Container -->
-      <div class="flex items-center justify-center fixed h-screen top-[10%] w-full">
+      <div class="flex items-center justify-center fixed h-screen bottom-[-20%] w-full">
         <!-- Modal -->
         <div class="bg-white bg-[url('/public/img/paw-pattern-light.png')] rounded-t-[32px] shadow-lg p-8 m-4 w-full h-full text-center">
           <ul class="flex flex-col items-center gap-8 z-10 text-sky-900 font-semibold visible md:invisible">
@@ -42,7 +55,7 @@
     <!-- /////////// -->
 
     <nav class="flex flex-grow mx-auto scale-95 bg-[url('/public/img/paw-pattern-light.png')] bg-white flex-row justify-between my-5 pe-10 md:px-10 py-4 rounded-full overflow-hidden top-0 fixed w-full z-50 drop-shadow-[0_6px_18px_rgba(0,0,0,5%)]">
-      <a href="#" class="z-10 flex justify-center items-center">
+      <a href="index.html" class="z-10 flex justify-center items-center">
         <svg width="155" class="scale-75 md:scale-100" height="58" viewBox="0 0 155 58" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M60.4449 40.124C59.1627 38.4992 58.015 36.7483 57.1699 34.8548C56.1693 32.4203 55.6375 29.8307 55.5015 27.2138C55.7596 26.7599 57.3411 23.9973 58.4043 22.6839C59.5645 21.2504 61.128 18.5184 60.5605 15.5362C60.1716 13.4929 59.7298 12.3109 59.4898 11.7688C59.7878 11.3781 60.1075 11.0021 60.4519 10.6443C61.1057 10.0109 61.8107 9.35653 62.705 9.09757C63.4981 8.85115 64.4244 9.00708 65.043 9.57697C65.9846 10.5195 65.6676 12.0046 65.2393 13.1211C64.5729 14.7519 63.5654 16.2124 62.7625 17.7758C60.8793 21.3502 59.3334 25.221 59.158 29.3007C59.1162 31.5826 59.229 33.9977 60.204 36.0967C60.2388 36.1501 60.2774 36.1951 60.3177 36.2336C60.3228 37.617 60.9373 38.9601 61.6501 40.1263C62.6827 41.7626 63.9886 43.2184 64.8936 44.9374C64.9284 45.0038 64.9618 45.0706 64.9956 45.1374C63.5431 43.4083 61.858 41.8875 60.4449 40.124Z"
@@ -84,8 +97,8 @@
           />
         </svg>
       </a>
-      <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-semibold visible md:invisible">
-        <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-semibold invisible md:visible">
+      <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-semibold">
+        <ul class="flex flex-row items-center gap-8 z-10 text-sky-900 font-semibold max-md:hidden">
           <li>
             <a href="/src/tentang.html">Tentang Kami</a>
           </li>
@@ -102,9 +115,9 @@
 
         <!-- Button to Open Modal -->
         <div class="my-auto cursor-pointer space-y-2 z-50 md:hidden" id="hamburger">
-          <div class="h-0.5 w-8 bg-teal-900"></div>
-          <div class="h-0.5 w-8 bg-teal-900"></div>
-          <div class="h-0.5 w-8 bg-teal-900"></div>
+          <div class="line h-0.5 w-8 bg-teal-900 transition-all duration-300"></div>
+          <div class="line h-0.5 w-8 bg-teal-900 transition-all duration-300"></div>
+          <div class="line h-0.5 w-8 bg-teal-900 transition-all duration-300"></div>
         </div>
         <!-- <a class="nav-toggle">
             <span class="bar bg-dark hover:bg-cyan-950"></span>
@@ -245,20 +258,28 @@
           <img src="/public/img/logo-light.svg" class="w-[300px] h-[120px] scale-95 md:scale-100" alt="" />
           <ul class="text-white flex flex-col gap-3 w-full md:w-56">
             <li class="text-Fuschia font-bold">Main Links</li>
-            <li>Home</li>
-            <li>Klinik</li>
-            <li>Daycare & Grooming</li>
-            <li>Adopsi</li>
+            <a href="index.html">
+              <li>Home</li>
+            </a>
+            <a href="klinik.html">
+              <li>Klinik</li>
+            </a>
+            <a href="grooming.html">
+              <li>Daycare & Grooming</li>
+            </a>
+            <a href="adopsi.html">
+              <li>Adopsi</li>
+            </a>
           </ul>
           <ul class="text-white flex flex-col gap-3 w-full md:w-56">
             <li class="text-Fuschia font-bold">Contact</li>
-            <a href="#">
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">
               <li>0812-3456-78910</li>
             </a>
-            <a href="#">
+            <a target="_blank" href="https://mail.google.com/mail/u/0/#search/admin%40joycat.com">
               <li>admin@joycat.com</li>
             </a>
-            <a href="#">
+            <a target="_blank" href="https://maps.app.goo.gl/d9ze4WH84M2zgJZc6">
               <li>Jl. Radar Auri No.32d, Cisalak Ps., Kec. Cimanggis, Kota Depok, Jawa Barat 16452</li>
             </a>
           </ul>
@@ -288,31 +309,12 @@
         </ul> -->
       </div>
     </footer>
+    <script>
+      document.getElementById("hamburger").addEventListener("click", function () {
+        const lines = this.querySelectorAll(".line");
+        lines.forEach((line) => line.classList.toggle("transform-active"));
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
-<div class="flex flex-col items-start gap-5 w-full px-10">
-  <h4 class="text-[30px] font-semibold">Opening Hours</h4>
-  <ul class="flex flex-col gap-5 text-lg">
-    <li>
-      <span class="font-bold">Weekdays</span>
-      <br />
-      08:00-17:00
-    </li>
-
-    <li>
-      <span class="font-bold">Weekend</span>
-      <br />
-      07:00-19:00
-    </li>
-  </ul>
-  <div class="bg-greenish w-full h-px"></div>
-  <h4 class="text-[30px] font-semibold">Kontak Cepat</h4>
-  <ul class="flex flex-col gap-5 text-lg">
-    <li>
-      <span class="font-bold">Whatsapp</span>
-      <br />
-      0812-1234-5678
-    </li>
-  </ul>
-</div>
